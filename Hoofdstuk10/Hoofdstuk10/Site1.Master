@@ -21,7 +21,7 @@
                 De inhoud</p>
             <p>
                 <asp:TextBox ID="txtZoek" runat="server"></asp:TextBox>
-                <asp:Button ID="btnZoek" runat="server" Text="Button" />
+                <asp:Button ID="btnZoek" runat="server" Text="Button" OnClick="btnZoek_Click" />
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:introaspdotnetConnectionString1 %>" DeleteCommand="DELETE FROM [movies] WHERE [movie_id] = @movie_id" InsertCommand="INSERT INTO [movies] ([title], [release_date]) VALUES (@title, @release_date)" SelectCommand="SELECT [movie_id], [title], [release_date] FROM [movies] WHERE ([title] LIKE '%' + @title + '%')" UpdateCommand="UPDATE [movies] SET [title] = @title, [release_date] = @release_date WHERE [movie_id] = @movie_id">
                     <DeleteParameters>
                         <asp:Parameter Name="movie_id" Type="Int32" />
@@ -86,9 +86,9 @@
     </div>
         <div id="Menu" >het menu<br />
             <br />
-            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource2">
             </asp:Menu>
-            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" />
         </div>
     </form>
 </body>

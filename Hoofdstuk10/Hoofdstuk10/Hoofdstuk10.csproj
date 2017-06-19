@@ -102,6 +102,7 @@
     <Content Include="PasAanFilm.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="Main.Master" />
+    <Content Include="users1.aspx" />
     <Content Include="VoegToeFilm.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Web.Debug.config">
@@ -110,7 +111,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sitemap" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CascadingSheet.css" />
@@ -145,6 +148,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="users1.aspx.cs">
+      <DependentUpon>users1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users1.aspx.designer.cs">
+      <DependentUpon>users1.aspx</DependentUpon>
     </Compile>
     <Compile Include="VoegToeFilm.aspx.cs">
       <DependentUpon>VoegToeFilm.aspx</DependentUpon>

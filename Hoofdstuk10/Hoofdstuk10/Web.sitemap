@@ -5,6 +5,7 @@
       <siteMapNode url="" title="Bewerken" description="" >
         <siteMapNode url="~/PasAanFilm.aspx" title="Aanpassen"  description="" />
         <siteMapNode url="~/VoegToeFilm.aspx" title="Toevoegen"  description="" />
+        <siteMapNode url="~/users1.aspx" title="Gebruikers" description="" />
       </siteMapNode>
     </siteMapNode>
       
